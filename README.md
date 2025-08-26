@@ -1,2 +1,2 @@
-# ESMITH9887.github.io
+# esmith9887.github.io
 my personal portfolio 
