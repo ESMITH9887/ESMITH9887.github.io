@@ -1,10 +1,65 @@
 # My Coding Notebook
-- [Day 1](#day-1)
-  - [Notes](#notes)
-  - [Practice](#practice)
-- [Day 2](#day-2)
 
+## Table of Contents
+- [Flutter Notes](flutter-notes)
+  - [What is Flutter](#what-is-flutter)
+  - [Practice](#practice)
+- [Key Terms and Definitions](#key-terms-and-definitions)
 [Notebook Style Guide](#markdown-style-guide-for-coding-notebooks)
+
+## Flutter Notes
+
+### What is Flutter?
+- Definition:A framework made by Google for building apps that works on web, android, and IOS - with one codebase
+- Why is it useful? Uses the Dart programming language 
+
+---
+
+### Key Terms and Definitions
+
+| Term             | Definition                                      | Example / Notes                          |
+|------------------|--------------------------------------------------|-------------------------------------------|
+| Widget           |                                                  |                                           |
+| MaterialApp      |                                                  |                                           |
+| Scaffold         |                                                  |                                           |
+| StatelessWidget  |                                                  |                                           |
+| StatefulWidget   |                                                  |                                           |
+| Navigator        |                                                  |                                           |
+| AppBar           |                                                  |                                           |
+| Column           |                                                  |                                           |
+| Row              |                                                  |                                           |
+| Container        |                                                  |                                           |
+| Text             |                                                  |                                           |
+| Image.network    |                                                  |                                           |
+
+| Padding    |                    |                     |
+
+| Center      |                    |                     |
+
+---
+
+### Layout and Design Widgets
+- How do you center a widget?
+- How do you align something to the left or right?
+- What widget adds space around content?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Markdown Style Guide for Coding Notebooks
 
 Follow this guide to keep your coding notebook **clear, consistent, and professional**.  
