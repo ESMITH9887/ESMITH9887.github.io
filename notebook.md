@@ -1,2 +1,1 @@
-something more you might wanna know about me is that im researching a future lifestyle im looking foward to living in. I plan on moving to Charlotte North Carolina becuase of the housing prices, I might end up with a family so I also plan on buying a 3 bedroom home for a purchase price of 400k, bmw m4 for a vehicle, its my favorite car and to afford everything I plan on buy imma study to be a dentist so ill first obtain my bacholers degree and go to medical school to get a doctorate.
-![download](https://github.com/user-attachments/assets/782d0316-68a2-4f9b-8303-0d453a8cf93c)
+# My Coding Notebook
