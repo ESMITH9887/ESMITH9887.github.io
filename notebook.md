@@ -20,6 +20,7 @@
 
 | Term             | Definition                                      | Example / Notes                          |
 |------------------|--------------------------------------------------|-------------------------------------------|
+| Variable  | A named container used to store a value that may change.  | `var x = 5;` | score |      |
 | Widget           | Basic building block of a Flutter app. Everything is a widget.             Text, Image, Container, Column       
 | MaterialApp      |The root of the app. Sets up routes and themes.                             Found in main. dart                     |                                           |
 | Scaffold         |Provides basic visual layout - like a header, body, floating button         Each screen uses it                                         |                                           |
