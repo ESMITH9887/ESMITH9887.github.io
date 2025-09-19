@@ -60,47 +60,48 @@
 
 | main()     | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |Like turning on a TV and choosing which channel (app) to watch.  |in main.dart, void main() => runApp (MyPortfolioApp());  |
 
-|MaterialApp      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |Like the frame or theme for a building.  |  |
+|MaterialApp      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |Like the frame or theme for a building.  |return MaterialApp(home: HomeScreen());  |
 
-|Scaffold      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |Like the structure of a house with rooms and floors.  |  |
+|Scaffold      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |Like the structure of a house with rooms and floors.  | return Scaffold(
+      body: Center(  |
 
-|Column      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |A stack of boxes or books.  |  |
+|Column      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |A stack of boxes or books.  |Column(children: [Text("One"), Text("Two")])  |
 
-|Row      | A widget that shows things side-by-side. | `Row(...)` |A row of chairs.  |  |
+|Row      | A widget that shows things side-by-side. | `Row(...)` |A row of chairs.  |Row(children: [Icon(Icons.star), Text("Star")])  |
 
-|Container      | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |A box you decorate and put things inside.  |  |
+|Container      | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |A box you decorate and put things inside.  |Container(padding: EdgeInsets.all(10), color: Colors.blue)  |
 
-|Text      | A widget to display text on the screen. | `Text('Hello')` |A sign or label.  |  |
+|Text      | A widget to display text on the screen. | `Text('Hello')` |A sign or label.  |Text("Welcome to my app")  |
 
-|Image.network      | A widget to show an image using a link from the internet. | `Image.network('https://...')` |A digital photo frame that loads images from online.  |  |
+|Image.network      | A widget to show an image using a link from the internet. | `Image.network('https://...')` |A digital photo frame that loads images from online.  |Image.network('https://example.com/photo.jpg')  |
 
-|ElevatedButton      | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |A doorbell – when you press it, something happens.  |  |
+|ElevatedButton      | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |A doorbell – when you press it, something happens.  |ElevatedButton(onPressed: () {}, child: Text("Click Me"))  |
 
-|onPressed      | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |Pressing a button to play music.  |  |
+|onPressed      | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |Pressing a button to play music.  |ElevatedButton(onPressed: () => print("Hello"), child: Text("Tap"))  |
 
-|StatelessWidget      | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |A poster on a wall – doesn’t change.  |  |
+|StatelessWidget      | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |A poster on a wall – doesn’t change.  |class AboutPage extends StatelessWidget { ... }  |
 
-|StatefulWidget      | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |A remote control – its state (channel/volume) changes.  |  |
+|StatefulWidget      | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |A remote control – its state (channel/volume) changes.  |class CounterApp extends StatefulWidget { ... }  |
 
-|Navigator.pushNamed      | Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |Going into a different room in a house.  |  |
+|Navigator.pushNamed      | Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |Going into a different room in a house.  |Navigator.pushNamed(context, '/settings')  |
 
-|Padding      | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |Bubble wrap around a gift.  |  |
+|Padding      | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |Bubble wrap around a gift.  |Padding(padding: EdgeInsets.all(16), child: Text("Padded text"))  |
 
-|Center      | Aligns content in the center of the screen or container. | `Center(child: ...)` |Placing a photo frame exactly in the center of a wall.  |  |
+|Center      | Aligns content in the center of the screen or container. | `Center(child: ...)` |Placing a photo frame exactly in the center of a wall.  |Center(child: Text("Centered"))  |
 
-|Wrap      | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |Wrapping presents into multiple rows if one is full.  |  |
+|Wrap      | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |Wrapping presents into multiple rows if one is full.  |Wrap(children: [Chip(label: Text("Tag1")), Chip(label: Text("Tag2"))])  |
 
-|@override      | This marks a method as one that’s replacing a method in a parent class. | `@override` |Customizing a recipe to make your own version.  |  |
+|@override      | This marks a method as one that’s replacing a method in a parent class. | `@override` |Customizing a recipe to make your own version.  |@override Widget build(BuildContext context) {...}  |
 
-|build()      | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |A blueprint for a room layout.  |  |
+|build()      | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |A blueprint for a room layout.  |Widget build(BuildContext context) { return Text("Hello"); }  |
 
-|build      | Required in every widget class to describe what to show. | `build` |A recipe that tells how to prepare a dish.  |  |
+|build      | Required in every widget class to describe what to show. | `build` |A recipe that tells how to prepare a dish.  |@override build(BuildContext context) => ...  |
 
-|BuildContext      | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |A map that tells where you are in a mall.  |  |
+|BuildContext      | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |A map that tells where you are in a mall.  | Used in: build(BuildContext context) |
 
-|super.key      | A keyword used to pass a value to the parent widget. | `super.key` |Giving your name tag when entering a building.  |  |
+|super.key      | A keyword used to pass a value to the parent widget. | `super.key` |Giving your name tag when entering a building.  |const MyHomePage({super.key});  |
 
-|const      | A keyword that means the value won't change and is set once. | `const` |A permanent label on a product.  |  |
+|const      | A keyword that means the value won't change and is set once. | `const` |A permanent label on a product.  |const Text("This won’t change")  |
 
 
 
